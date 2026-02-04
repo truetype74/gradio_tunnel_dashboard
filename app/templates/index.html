@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Gradio Tunnel Dashboard</title>
+    <link rel="stylesheet" href="/static/styles.css" />
+  </head>
+  <body>
+    <main class="page">
+      <header>
+        <h1>Gradio Tunnel Dashboard</h1>
+        <p>Scansione porte attive e gestione tunnel Gradio.</p>
+      </header>
+
+      <section class="card">
+        <div class="card-header">
+          <h2>Porte in ascolto</h2>
+          <button id="refresh-ports">Aggiorna</button>
+        </div>
+        <div class="table ports" id="ports-table"></div>
+      </section>
+
+      <section class="card">
+        <div class="card-header">
+          <h2>Tunnel attivi</h2>
+          <button id="refresh-tunnels">Aggiorna</button>
+        </div>
+        <div class="table tunnels" id="tunnels-table"></div>
+      </section>
+
+      <section class="card debug-panel" id="debug-panel">
+        <div class="card-header">
+          <h2 id="debug-title"></h2>
+          <button id="debug-close">Chiudi</button>
+        </div>
+        <pre id="debug-content" class="debug-content"></pre>
+      </section>
+    </main>
+
+    <script src="/static/app.js"></script>
+  </body>
+</html>

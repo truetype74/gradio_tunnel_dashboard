@@ -1,0 +1,127 @@
+:root {
+  color-scheme: light;
+  font-family: "Inter", "Segoe UI", sans-serif;
+  background: #f4f6fb;
+  color: #1a1d2b;
+}
+
+body {
+  margin: 0;
+}
+
+.page {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 32px 24px 48px;
+}
+
+header {
+  margin-bottom: 24px;
+}
+
+header h1 {
+  margin: 0 0 8px;
+  font-size: 2rem;
+}
+
+header p {
+  margin: 0;
+  color: #3a3f55;
+}
+
+.card {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 14px 40px rgba(31, 39, 67, 0.08);
+}
+
+.debug-panel {
+  display: none;
+}
+
+.debug-panel.visible {
+  display: block;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.card-header h2 {
+  margin: 0;
+  font-size: 1.25rem;
+}
+
+button {
+  border: none;
+  border-radius: 8px;
+  padding: 8px 14px;
+  background: #4c6fff;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.logs-button {
+  background: #2f3b5b;
+  margin-right: 8px;
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.table {
+  display: grid;
+  gap: 8px;
+}
+
+.row {
+  display: grid;
+  gap: 12px;
+  padding: 10px 12px;
+  border-radius: 10px;
+  background: #f9fafc;
+}
+
+.table.ports .row {
+  grid-template-columns: 0.7fr 1.5fr 1.5fr 0.8fr 0.8fr;
+}
+
+.table.tunnels .row {
+  grid-template-columns: 0.8fr 1fr 1fr 2fr 2fr 0.8fr;
+  align-items: center;
+}
+
+.row.header {
+  background: transparent;
+  font-weight: 700;
+}
+
+.cell a {
+  color: #2d5bff;
+  text-decoration: none;
+}
+
+.debug-content {
+  background: #0f172a;
+  color: #e2e8f0;
+  padding: 16px;
+  border-radius: 12px;
+  font-size: 0.85rem;
+  max-height: 320px;
+  overflow: auto;
+  white-space: pre-wrap;
+}
+
+@media (max-width: 720px) {
+  .row {
+    grid-template-columns: 1fr;
+  }
+}

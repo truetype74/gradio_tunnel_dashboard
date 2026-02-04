@@ -47,6 +47,8 @@ function renderPorts(ports) {
       <div class="row">
         <div class="cell">${port.port}</div>
         <div class="cell">${port.service}</div>
+        <div class="cell">${port.container ? port.container : "-"}</div>
+        <div class="cell">${port.pid ? port.pid : "-"}</div>
         <div class="cell">
           <button data-port="${port.port}" class="start-button">Avvia tunnel</button>
         </div>
@@ -59,6 +61,8 @@ function renderPorts(ports) {
     <div class="row header">
       <div class="cell">Porta</div>
       <div class="cell">Servizio</div>
+      <div class="cell">Container</div>
+      <div class="cell">PID</div>
       <div class="cell">Azioni</div>
     </div>
     ${rows}

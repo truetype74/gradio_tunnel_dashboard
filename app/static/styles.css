@@ -91,7 +91,7 @@ button:disabled {
 }
 
 .table.ports .row {
-  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-columns: 0.7fr 1.5fr 1.5fr 0.8fr 0.8fr;
 }
 
 .table.tunnels .row {

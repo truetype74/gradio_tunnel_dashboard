@@ -32,3 +32,8 @@ quando l'URL non è disponibile.
 
 Nella sezione dei tunnel puoi aprire il pannello Log per vedere le ultime righe prodotte dal processo
 `gradio_tunneling`. Questo aiuta a capire se il tunnel non parte o se l'URL non viene stampato.
+
+## Rilevamento servizi Docker
+
+La tabella delle porte mostra anche il nome del container Docker quando disponibile. Questo richiede
+che il processo abbia accesso al socket Docker locale.
